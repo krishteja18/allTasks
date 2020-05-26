@@ -5,6 +5,7 @@ import Datepicker from "../pages/Masters/Datepicker"
 
 import Table from "../pages/Masters/Table"
 import Form from "../pages/Masters/Form"
+import Password from "../pages/Masters/PasswordValidation"
 
 const reg = /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(?::\d+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)$/;
 export function isUrl(path) {
@@ -30,6 +31,12 @@ const menuData = [
     path: "form",
 
     component: Form,
+  },
+  {
+    name: "Password",
+    path: "password",
+
+    component: Password,
   }
 ];
 

@@ -40,7 +40,7 @@ class FormTask extends Component {
 
     return (
       <Fragment>
-        <Form  style={{ marginTop:"90px",marginLeft:"400px" }} onSubmit={this.handleSubmit} id="organizationEditForm ">
+        <Form  style={{ marginTop:"200px",marginLeft:"400px" }} onSubmit={this.handleSubmit} id="organizationEditForm ">
           <div style={{ display: "flex" }}>
             <FormItem
               {...formItemLayout}
