@@ -6,6 +6,10 @@ import Datepicker from "../pages/Masters/Datepicker"
 import Table from "../pages/Masters/Table"
 import Form from "../pages/Masters/Form"
 import Password from "../pages/Masters/PasswordValidation"
+import ImageUpload from "../pages/Masters/ImageUpload"
+import PdfUpload from "../pages/Masters/PdfUpload"
+
+
 
 const reg = /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(?::\d+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)$/;
 export function isUrl(path) {
@@ -37,6 +41,18 @@ const menuData = [
     path: "password",
 
     component: Password,
+  },
+  {
+    name: "ImageUpload",
+    path: "imageUpload",
+
+    component: ImageUpload,
+  },
+  {
+    name: "PdfUPload",
+    path: "pdfUpload",
+
+    component: PdfUpload,
   }
 ];
 

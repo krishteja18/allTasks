@@ -35,12 +35,10 @@ class FormTask extends Component {
         sm: { span: 50 },
       },
     };
-    const { currentAction } = this.props;
-    const { data } = this.state;
 
     return (
       <Fragment>
-        <Form  style={{ marginTop:"200px",marginLeft:"400px" }} onSubmit={this.handleSubmit} id="organizationEditForm ">
+        <Form  style={{ marginTop:"200px",marginLeft:"400px" }} onSubmit={this.handleSubmit} >
           <div style={{ display: "flex" }}>
             <FormItem
               {...formItemLayout}
