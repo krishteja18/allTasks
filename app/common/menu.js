@@ -8,6 +8,9 @@ import Form from "../pages/Masters/Form"
 import Password from "../pages/Masters/PasswordValidation"
 import ImageUpload from "../pages/Masters/ImageUpload"
 import PdfUpload from "../pages/Masters/PdfUpload"
+import ErrorHandling  from "../pages/Masters/ErrorHandling"
+import MultiLanguage  from "../pages/Masters/MultiLanguage"
+
 
 
 
@@ -53,7 +56,14 @@ const menuData = [
     path: "pdfUpload",
 
     component: PdfUpload,
-  }
+  },
+  {
+    name: "ErrorHandling",
+    path: "errorhandling",
+
+    component: ErrorHandling,
+  },
+
 ];
 
 function formatter(data, parentPath = "/", parentAuthority) {

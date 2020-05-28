@@ -1,18 +1,18 @@
 import React, { Component,useState,useEffect ,Fragment } from 'react';
 import axios from 'axios';
 
-import Table from './tableView';
+// import Table from './tableView';
 
 
 
 
- class Main extends Component{
+ class ErrorHandling extends Component{
     constructor(props) {
         super(props)
     
         this.state = {
         episodes:[],
-        loading:false,
+        
              
         }
     }
@@ -33,10 +33,10 @@ componentDidMount(){
      console.log("teja");
      
    try{
-       const data=await axios.get(`https://rickandmortyapi.com/api/episode/`);
+       const data=await axios.get(`https://api.github.com/user`);
        
-console.log(data,"dat")
-    this.setState({episodes:data.data.results,loading:true})
+console.log(data['data'][0].login,"dat")
+    this.setState({episodes:data['data'][0].login})
        
    }
    catch(e){
@@ -60,8 +60,12 @@ console.log(data,"dat")
 
 
 <Fragment>
-    <Table loading={this.state.loading} episodes={this.state.episodes}  />
+    
+<div style={{marginTop:"70px"}}>
 
+{this.state.episodes}
+
+</div>
 
 
 </Fragment>
@@ -84,4 +88,4 @@ console.log(data,"dat")
 
 
 
-export default Main
+export default ErrorHandling
