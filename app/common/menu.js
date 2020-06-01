@@ -9,7 +9,7 @@ import Password from "../pages/Masters/PasswordValidation"
 import ImageUpload from "../pages/Masters/ImageUpload"
 import PdfUpload from "../pages/Masters/PdfUpload"
 import ErrorHandling  from "../pages/Masters/ErrorHandling"
-import MultiLanguage  from "../pages/Masters/MultiLanguage"
+import Websocket  from "../pages/Masters/Websocket"
 
 
 
@@ -62,6 +62,12 @@ const menuData = [
     path: "errorhandling",
 
     component: ErrorHandling,
+  },
+  {
+    name: "Websocket",
+    path: "websocket",
+
+    component: Websocket,
   },
 
 ];
